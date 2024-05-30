@@ -9,6 +9,7 @@
     background-color: #000;
   } */
   canvas {
+    overflow: hidden;
     position: absolute;
     left: 0;
     top: 0;
