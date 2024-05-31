@@ -1,0 +1,16 @@
+.resumecard {
+    -webkit-text-stroke: .5px #9b2020;
+    --bi: linear-gradient(#ffee0009 5em, #78787805 5em), linear-gradient(50deg, #ffee0000, #ffee0002);
+    /* position: relative;
+    width: 280px; */
+    padding: 1.5em;
+  }
+.bordercard{
+    border:0px solid grey;
+}
+.margincardrgt{
+  margin-right: 6vw;
+}
+.margincardlft{
+  margin-left: 6vw;
+}
