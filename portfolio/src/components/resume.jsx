@@ -2,7 +2,7 @@ import "../css/resume.css"
 import image1 from "../img/image1.jpg"
 function Resume(){
     return(
-        <div>
+        <div className="overflo">
         <style
             type="text/css"
             dangerouslySetInnerHTML={{
@@ -116,7 +116,7 @@ function Resume(){
             <div className="col bordercard margincardlft">
                         <div className="card-container">
                             <div className="resumecard">
-                                <img src={image1} style={{width:"35vh",marginLeft:"10vw"}} alt="Me"></img>
+                                <img className="picsize" src={image1} style={{width:"35vh",marginLeft:"10vw"}} alt="Me"></img>
                             </div>
                         </div>
                         <div className="card-container">

@@ -183,7 +183,7 @@ body {
                   & .play {
                     width: 15px;
                     height: 15px;
-                    background: #fff;
+                    background: #fff6f6;
                     clip-path: polygon(0 0, 100% 50%, 0 100%);
                   }
                 }
@@ -191,7 +191,7 @@ body {
                 & .texttv {
                   font-family: "Heading Pro", sans-serif;
                   font-size: 42px;
-                  color: white;
+                  color: rgb(169, 125, 4);
                   letter-spacing: -1px;
                 }
               }
@@ -271,16 +271,16 @@ body {
                 position: absolute;
               }
 
-              & .selector {
+              /* & .selector {
                 position: absolute;
                 width: 75%;
                 background: linear-gradient(#666 30%, #aaa 40%);
                 height: 4px;
-                border: 1px solid #666;
+                border: 1px solid #ff0000;
                 border-radius: 4px / 8px;
                 transform: rotate(calc(var(--value) - 90deg));
                 transition: transform 0.25s linear;
-              }
+              } */
 
               &.channel-button {
                 background: #000;

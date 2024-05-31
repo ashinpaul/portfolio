@@ -12,7 +12,7 @@ function Home() {
     height: '100vh',
     backgroundSize: '100% 135%',
     backgroundPosition: '0px 2px',
-    // backgroundImage: 'linear-gradient(0deg, #6E6800FF 1%, #000000FF 39%)',
+    // backgroundImage: 'linear-gradient(0deg, #FFF 1%, #000000 39%)',
     backgroundColor:'black',
   };
   return (
@@ -21,7 +21,7 @@ function Home() {
             <div id="stars2"/>
             <div id="stars3"/>
             <div>
-              <span className="text">sample text</span>
+              <span className="text">Ashin Paul P A</span>
             </div>
             <div>
               <span>

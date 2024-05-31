@@ -1,27 +1,46 @@
 import { useState } from "react";
 import "../css/tv.css"
+import img from "../img/image1.jpg"
 import { useNavigate } from "react-router-dom";
 function Third(){
-    let channelNo=0;
-    const[channel,setchannel]=useState("aaaa");
+    const[channelNo,setChannelNo]=useState(0);
+    const[channel,setChannel]=useState("About Me");
     const[onoff,setonoff]=useState("on");
     const navigate=useNavigate();
-    const channelHandler=()=>{
-        if(channelNo===0){
-            setchannel("bbbb");
-            channelNo=+1;
-        }
-        else{
-            setchannel("aaaa");
-            channelNo=-1;
-        }
+    
+    const channelHandler = () => {
+      if (channelNo === 0) {
+        setChannel("About Me");
+        setChannelNo(prevChannelNo => prevChannelNo + 1);
+      } else if (channelNo === 1) {
+        setChannel("Contact Me");
+        setChannelNo(prevChannelNo => prevChannelNo + 1);
+      } else if (channelNo === 2) {
+        setChannel("Resume?");
+        setChannelNo(0); 
+      }
     }
+
     const OnOffHandler=()=>{
-        (onoff==="on")?setonoff("off"):setonoff("on");
+      (onoff==="on")?setonoff("off"):setonoff("on");
     }
+
     const channelZoom=()=>{
-      navigate('/about');
+      if(channel==="Resume?"){
+        const pdfUrl = process.env.PUBLIC_URL + 'logo512.png';
+        const link = document.createElement('a');
+        link.href = pdfUrl;
+        link.download='Ashin_Resume'
+        document.body.appendChild(link); 
+        link.click(); 
+        document.body.removeChild(link); 
+        
+      }
+      else if(channel=="About Me"){
+        navigate('/about');
+      }
     }
+
     const lineargrad = {
       width: '100%',
       height: '100vh',
