@@ -266,6 +266,7 @@ body {
               & .dial-core {
                 width: 28px;
                 height: 28px;
+                margin-bottom: 6vh;
                 border-radius: 50%;
                 background: conic-gradient(#eee 0deg 45deg, #666 70deg 285deg, #eee 320deg);
                 position: absolute;
