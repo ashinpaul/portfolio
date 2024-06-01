@@ -82,13 +82,13 @@ function Third(){
                 <div className="dial channel-button" style={{"--value": "0deg"}} onClick={()=>channelHandler()}>
                    <div className="data-container">
                   </div>
-                  <div className="dial-core my-5"></div>
+                  <div className="dial-core" style={{marginBottom:"30vh"}}></div>
                   <div className="selector"></div> 
                 </div>
                 <div className="dial volume-button" style={{"--value": "0deg"}} onClick={()=>channelZoom()}>
                   <div className="data-container">
                   </div>
-                  <div className="dial-core my-5"></div>
+                  <div className="dial-core "></div>
                   <div className="selector"></div>
                 </div>
               </div>
