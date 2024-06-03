@@ -79,17 +79,17 @@ function Third(){
             </div>
             <div className="television-lateral">
               <div className="dial-container">
-                <div className="dial channel-button" style={{"--value": "0deg"}} onClick={()=>channelHandler()}>
+                <div className="dial channel-button"  onClick={()=>channelHandler()}>
                    <div className="data-container dial-core">
                   </div>
-                  <div className=""></div>
-                  <div className="selector"></div> 
+                  {/* <div className=""></div> */}
+                  {/* <div className="selector"></div>  */}
                 </div>
-                <div className="dial volume-button" style={{"--value": "0deg"}} onClick={()=>channelZoom()}>
+                <div className="dial volume-button"  onClick={()=>channelZoom()}>
                   <div className="data-container dial-core ">
                   </div>
-                  <div className=""></div>
-                  <div className="selector"></div>
+                  {/* <div className=""></div>
+                  <div className="selector"></div> */}
                 </div>
               </div>
               <div className="speaker-container">
