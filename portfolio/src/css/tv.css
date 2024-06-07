@@ -193,6 +193,8 @@ body {
                   font-size: 42px;
                   color: rgb(169, 125, 4);
                   letter-spacing: -1px;
+                  margin: 0 auto;
+                  width: 50%;
                 }
               }
             }

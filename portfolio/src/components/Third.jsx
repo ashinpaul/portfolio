@@ -36,7 +36,7 @@ function Third(){
         document.body.removeChild(link); 
         
       }
-      else if(channel=="About Me"){
+      else if(channel==="About Me"){
         navigate('/about');
       }
     }
