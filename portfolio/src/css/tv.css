@@ -188,14 +188,7 @@ body {
                   }
                 } */
 
-                & .texttv {
-                  font-family: "Heading Pro", sans-serif;
-                  font-size: 42px;
-                  color: rgb(169, 125, 4);
-                  letter-spacing: -1px;
-                  margin: 0 auto;
-                  width: 50%;
-                }
+               
               }
             }
           }
@@ -266,6 +259,7 @@ body {
               }
 
               & .dial-core {
+                margin: 0 auto;
                 width: 28px;
                 height: 28px;
                 border-radius: 50%;
@@ -381,4 +375,12 @@ body {
     100% {
         transform: translateY(25px);
     }
+  }
+  .texttv {
+    font-family: "Heading Pro", sans-serif;
+    font-size: 42px;
+    color: rgb(169, 125, 4);
+    letter-spacing: -1px;
+    margin:  auto;
+    /* width: 50%; */
   }
