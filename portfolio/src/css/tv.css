@@ -72,23 +72,6 @@ body {
     flex-direction: column;
     align-items: center;
     z-index: 1;
-
-    & .television {
-        width: 357px;
-        height: 251px;
-      border-radius: 35px / 45px;
-      box-shadow:
-        2px 2px 5px #0004,
-        2px -2px 2px rgb(0, 0, 0) inset,
-        2px 1px 1px #fff inset,
-        0 0 3px 5px #0002;
-      background: var(--television-bgcolor);
-      background: linear-gradient(var(--television-bgcolor), var(--television-bgcolor-dark));
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      z-index: 2;
-
       & .television-inner {
         width: 93%;
         height: 90%;
@@ -347,12 +330,12 @@ body {
           }
         }
       }
-    }
+    
 }
 
 }
 
-/* Animation */
+/* Animation //////////////////////////////////////////////////////////////////*/
 
 .off {
   transition: opacity 0.5s;
@@ -386,4 +369,20 @@ body {
     align-items: center;
     justify-content: center;
     /* width: 50%; */
+  }
+  .television {
+    width: 357px;
+    height: 251px;
+  border-radius: 35px / 45px;
+  box-shadow:
+    2px 2px 5px #0004,
+    2px -2px 2px rgb(0, 0, 0) inset,
+    2px 1px 1px #fff inset,
+    0 0 3px 5px #0002;
+  background: var(--television-bgcolor);
+  background: linear-gradient(var(--television-bgcolor), var(--television-bgcolor-dark));
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
   }
