@@ -382,5 +382,8 @@ body {
     color: rgb(169, 125, 4);
     letter-spacing: -1px;
     margin:  auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     /* width: 50%; */
   }
