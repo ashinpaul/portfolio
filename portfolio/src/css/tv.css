@@ -381,7 +381,7 @@ body {
     font-size: 42px;
     color: rgb(169, 125, 4);
     letter-spacing: -1px;
-    margin:  auto;
+    margin-top:  6vh;
     display: flex;
     align-items: center;
     justify-content: center;
