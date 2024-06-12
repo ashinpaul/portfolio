@@ -35,14 +35,14 @@ body {
   align-items: center;
   animation: float 3s infinite alternate ease-in-out;
   
-  & .antenna-container {
+   .antenna-container {
     width: 235px;
     height: 85px;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
 
-    & .antenna {
+     .antenna {
       width: 100%;
       height: 4px;
       background: var(--antenna-gradient);
@@ -52,7 +52,7 @@ body {
       display: flex;
       align-items: center;
 
-      &::before {
+      ::before {
         content: "";
         display: block;
         width: 8px;
@@ -67,12 +67,12 @@ body {
     }
   }
 
-  & .television-container {
+   .television-container {
     display: flex;
     flex-direction: column;
     align-items: center;
     z-index: 1;
-      & .television-inner {
+       .television-inner {
         width: 93%;
         height: 90%;
         background: linear-gradient(to bottom, #454c45 5%, #232522 35% 45%);
@@ -86,7 +86,7 @@ body {
         align-content: center;
         gap: 3px;
 
-        & .television-screen-container {
+         .television-screen-container {
           border: 1px solid #222;
           box-shadow:
             0 2px 2px #888,
@@ -103,7 +103,7 @@ body {
             linear-gradient(70deg, #555 15%, transparent 30%),
             repeating-conic-gradient(#222 0 30deg, #333 60deg, #222 90deg);
 
-          & .television-crt {
+           .television-crt {
             width: 99%;
             height: 95%;
             background: #111;
@@ -116,7 +116,7 @@ body {
             justify-content: center;
             align-items: center;
 
-            & .television-screen {
+             .television-screen {
               background: #302d30;
               width: 95%;
               height: 95%;
@@ -125,7 +125,7 @@ body {
               overflow: hidden;
               position: relative;
 
-              & .noise {
+               .noise {
                 width: 100%;
                 height: 100%;
                 background:
@@ -136,7 +136,7 @@ body {
                 position: relative;
               }
 
-              & .off {
+               .off {
                 width: 100%;
                 height: 100%;
                 background: radial-gradient(#222, #1a1a1a, #111);
@@ -145,7 +145,7 @@ body {
                 top: 0;
               }
 
-              & .logo-container {
+               .logo-container {
                 position: absolute;
                 z-index: 0;
                 width: 100%;
@@ -154,7 +154,7 @@ body {
                 justify-content: center;
                 align-items: center;
 
-                /* & .logo {
+                /*  .logo {
                   background: #f34b59;
                   width: 45px;
                   height: 32px;
@@ -163,7 +163,7 @@ body {
                   display: grid;
                   place-items: center;
 
-                  & .play {
+                   .play {
                     width: 15px;
                     height: 15px;
                     background: #fff6f6;
@@ -177,14 +177,14 @@ body {
           }
         }
 
-        & .television-lateral {
+         .television-lateral {
           display: grid;
           grid-template-rows: 1.1fr 1fr;
           gap: 12px;
           margin: 15px;
           margin-left: 0;
 
-          & .dial-container {
+           .dial-container {
             border: 2px solid #333;
             border-left: 1px solid #444;
             border-bottom: 2px solid #444;
@@ -198,7 +198,7 @@ body {
             gap: 6px;
             align-items: center;
 
-            & .dial {
+             .dial {
               width: 42px;
               height: 42px;
               border: 2px solid #6e706f;
@@ -212,13 +212,13 @@ body {
               position: relative;
               cursor: grab;
 
-              & .data-container {
+               .data-container {
                 display: flex;
                 justify-content: center;
                 width: 100%;
                 height: 100%;
 
-                & .data {
+                 .data {
                   color: #888;
                   font-size: 6px;
                   text-shadow: 0 0 2px #888;
@@ -227,21 +227,21 @@ body {
                   height: 100%;
                   transform-origin: 50% 50%;
 
-                  &:nth-child(2) { transform: rotate(30deg); }
-                  &:nth-child(3) { transform: rotate(60deg); }
-                  &:nth-child(4) { transform: rotate(90deg); }
-                  &:nth-child(5) { transform: rotate(120deg); }
-                  &:nth-child(6) { transform: rotate(150deg); }
-                  &:nth-child(7) { transform: rotate(180deg); }
-                  &:nth-child(8) { transform: rotate(210deg); }
-                  &:nth-child(9) { transform: rotate(240deg); }
-                  &:nth-child(10) { transform: rotate(270deg); }
-                  &:nth-child(11) { transform: rotate(300deg); }
-                  &:nth-child(12) { transform: rotate(330deg); }
+                  :nth-child(2) { transform: rotate(30deg); }
+                  :nth-child(3) { transform: rotate(60deg); }
+                  :nth-child(4) { transform: rotate(90deg); }
+                  :nth-child(5) { transform: rotate(120deg); }
+                  :nth-child(6) { transform: rotate(150deg); }
+                  :nth-child(7) { transform: rotate(180deg); }
+                  :nth-child(8) { transform: rotate(210deg); }
+                  :nth-child(9) { transform: rotate(240deg); }
+                  :nth-child(10) { transform: rotate(270deg); }
+                  :nth-child(11) { transform: rotate(300deg); }
+                  :nth-child(12) { transform: rotate(330deg); }
                 }
               }
 
-              & .dial-core {
+               .dial-core {
                 margin: 0 auto;
                 width: 28px;
                 height: 28px;
@@ -250,7 +250,7 @@ body {
                 position: relative;
               }
 
-              /* & .selector {
+              /*  .selector {
                 position: absolute;
                 width: 75%;
                 background: linear-gradient(#666 30%, #aaa 40%);
@@ -261,21 +261,21 @@ body {
                 transition: transform 0.25s linear;
               } */
 
-              &.channel-button {
+              .channel-button {
                 background: #000;
               }
 
-              &.volume-button {
+              .volume-button {
                 background: #ccc;
 
-                & .data {
+                 .data {
                   color: #444;
                 }
               }
             }
           }
 
-          & .speaker-container {
+           .speaker-container {
             display: grid;
             grid-template-columns: repeat(6, 1fr);
             gap: 1px 0;
@@ -283,7 +283,7 @@ body {
             margin-left: 2px;
             margin-right: 2px;
 
-            & div {
+             .div {
               width: 10px;
               height: 10px;
               background: radial-gradient(#000, #222);
@@ -293,7 +293,7 @@ body {
           }
         }
 
-        & .buttons {
+         .buttons {
           position: absolute;
           bottom: 5px;
           right: 30px;
@@ -301,7 +301,7 @@ body {
           display: flex;
           justify-content: space-between;
 
-          & .button-container {
+           .button-container {
             width: 20px;
             height: 20px;
             background: linear-gradient(to bottom, #fff 40%, #aaa 50% 55%, #666 70%);
@@ -310,7 +310,7 @@ body {
             justify-content: center;
             align-items: center;
 
-            & .button {
+             .button {
               width: 10px;
               height: 10px;
               border-radius: 50%;
@@ -322,7 +322,7 @@ body {
                 box-shadow 0.1s;
               cursor: pointer;
 
-              &:active {
+              :active {
                 transform: translate(0, 0);
                 box-shadow: 0 0 1px 2px #000;
               }
