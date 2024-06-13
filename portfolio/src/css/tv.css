@@ -248,7 +248,7 @@ body {
                 border-radius: 50%;
                 background: conic-gradient(#eee 0deg 45deg, #666 70deg 285deg, #eee 320deg);
                 position: relative;
-                margin-top: 5vh;
+                margin-top: 1vh;
               }
 
               /* & .selector {
