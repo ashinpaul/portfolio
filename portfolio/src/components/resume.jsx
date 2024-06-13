@@ -363,7 +363,7 @@ function Resume(){
                     </div> 
                 </div>
             </div>
-        <div className="row">
+        {/* <div className="row"> */}
         {/* <p
             className="s4"
             style={{
@@ -445,7 +445,7 @@ function Resume(){
                 Portfolio Website<span className="s5">: </span>
                 <span className="s6">Using Front-end languages, HTML, JavaScript.</span>
             </h2> */}
-            </div>
+            {/* </div> */}
         </div>
     )
 }

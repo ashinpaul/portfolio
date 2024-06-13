@@ -127,7 +127,7 @@ function Third(){
             </div>
             <div className="buttons">
               <div className="button-container">
-                <div className="button" onClick={()=>OnOffHandler()}></div>
+                <div className="buttone" onClick={()=>OnOffHandler()}></div>
               </div>
             </div>
           </div>

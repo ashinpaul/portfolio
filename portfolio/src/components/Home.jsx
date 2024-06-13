@@ -39,7 +39,7 @@ function Home() {
                   </ReactTyped>
                 </span>
             </div>      
-            <div className="btn" onClick={()=>handleNav()}>Click</div>         
+            <div className="btn" style={{cursor: "grabbing"}}onClick={()=>handleNav()}>Click</div>         
             </div>
   );
 }
