@@ -116,10 +116,10 @@ function Resume(){
             <div className="col bordercard margincardlft">
                         <div className="card-container">
                             <div className="resumecard">
-                                <img className="picsize" src={image1} style={{width:"35vh",marginLeft:"10vw"}} alt="Me"></img>
+                                <img className="picsize" src={image1} style={{width:"55vh",marginLeft:"5vw",marginTop:"2vw"}} alt="Me"></img>
                             </div>
                         </div>
-                        <div className="card-container">
+                        {/* <div className="card-container">
                             <div className="resumecard">
                             <p
                                 className="s4"
@@ -172,8 +172,8 @@ function Resume(){
                             </li>
                         </ul>
                             </div>
-                        </div>
-                        <div className="card-container">
+                        </div> */}
+                        {/* <div className="card-container">
                     <div className="resumecard">        
                         <p
                             className="s4"
@@ -210,10 +210,10 @@ function Resume(){
                             </li>
                         </ul>  
                     </div>
-                </div>
+                </div> */}
                     </div>
-                <div className="col bordercard margincardrgt" >
-                    <div className="card-container">
+                <div className="col bordercard margincardrgt" style={{marginTop:"3vw"}}>
+                    {/* <div className="card-container">
                         <div className="resumecard ">
                             <p style={{ paddingLeft: "0pt", textIndent: "0pt", textAlign: "justify" }}>
                                 A highly motivated and hardworking individual who is currently pursuing
@@ -222,7 +222,7 @@ function Resume(){
                                 skills of an artist and a programmer.
                             </p>
                         </div>
-                    </div>
+                    </div> */}
                     <div className="card-container">
                         <div className="resumecard">
                             <p
@@ -254,7 +254,7 @@ function Resume(){
                                 textAlign: "left"
                                 }}
                             >
-                            {'>>'}  Rlabz Rajagiri <span className="p" style={{marginLeft:"25vw"}}>Jan 2024 – Mar 2024</span>
+                            {'>>'}  Rlabz Rajagiri <span className="p" style={{marginLeft:"18vw"}}>Jan 2024 – Mar 2024</span>
                             </h2>
                             <p style={{ paddingLeft: "0pt", textIndent: "0pt",textAlign:"justify" }}>
                                 Developed dynamic web applications using React.js, enhancing user
@@ -280,7 +280,7 @@ function Resume(){
                                 textAlign: "left"
                                 }}
                             >
-                            {'>>'}  Rajagiri College of Social Sciences <span className="p" style={{marginLeft:"18.5vw"}}>2022 - 2024</span>
+                            {'>>'}  Rajagiri College of Social Sciences <span className="p" style={{marginLeft:"13vw"}}>2022 - 2024</span>
                             </h2>
                             <p
                                 style={{
@@ -300,7 +300,7 @@ function Resume(){
                                 textAlign: "left"
                                 }}
                             >
-                            {'>>'}  MGAJ Arts and Science College <span className="p" style={{marginLeft:"20vw"}}>2019 - 2022</span>
+                            {'>>'}  MGAJ Arts and Science College <span className="p" style={{marginLeft:"13vw"}}>2019 - 2022</span>
                             </h2>
                             <p
                                 style={{

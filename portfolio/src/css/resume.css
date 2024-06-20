@@ -20,6 +20,6 @@
     height: 0px;
   }
   .overflo{
-    overflow: auto;
+    overflow: hidden;
   }
 }

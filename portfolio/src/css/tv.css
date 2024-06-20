@@ -243,8 +243,8 @@ body {
 
               & .dial-core {
                 margin: 0 auto;
-                width: 28px;
-                height: 28px;
+                width: 25px;
+                height: 25px;
                 border-radius: 50%;
                 background: conic-gradient(#eee 0deg 45deg, #666 70deg 285deg, #eee 320deg);
                 position: relative;

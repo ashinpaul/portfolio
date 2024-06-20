@@ -1,10 +1,22 @@
+import { useState } from "react";
 import "../css/screen.css"
 import { useNavigate } from "react-router-dom";
 function About(){
-    // var perf =require('../../public/resume.html');
     const navigate=useNavigate();
+    const[valueprev,setvalueprev]=useState(true);
+    const[valuenext,setvaluenext]=useState(false);
     const onclickhandler=()=>{
         navigate('/third')
+    }
+    const onnexthandler=()=>{
+        setvalueprev(false);
+        setvaluenext(true);
+        navigate('/resumetwo'); 
+    }
+    const onprevhandler=()=>{
+        setvalueprev(true);
+        setvaluenext(false);
+        navigate('/about')
     }
     return(
          <div className="canvas overflow-hidden">
@@ -18,7 +30,19 @@ function About(){
                         </div>
                     </div>
                 </div>
-                <button style={{zIndex:1001,marginTop:"90vh",marginLeft:"90vw",cursor:"not-allowed"}} onClick={()=>onclickhandler()}>back</button>
+                <div className="container-fluid d-flex justify-content-end align-items-end">
+                    <div className="button-container d-flex">
+                    <button 
+                        style={{marginRight:"1rem",marginTop:"90vh",cursor:"not-allowed"}}
+                        onClick={()=>onclickhandler()}>back</button>
+                    <button className=""
+                        style={{marginRight:"1rem",marginTop:"90vh",cursor:"not-allowed"}} 
+                        onClick={()=>onnexthandler()} disabled={valuenext}>next</button>
+                    <button className=""
+                        style={{marginRight:"1rem",marginTop:"90vh",cursor:"not-allowed"}} 
+                        onClick={()=>onprevhandler()} disabled={valueprev}>previous</button>
+                    </div>
+                </div>
             </div>
         </div>
     )

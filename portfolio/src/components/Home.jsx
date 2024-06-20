@@ -1,5 +1,6 @@
 import {ReactTyped} from "react-typed";
 import { useNavigate } from "react-router-dom";
+import { useEffect } from "react";
 import "../css/Homecss.css";
 import "../css/stars.css";
 function Home() {
@@ -15,6 +16,24 @@ function Home() {
     // backgroundImage: 'linear-gradient(0deg, #FFF 1%, #000000 39%)',
     backgroundColor:'black',
   };
+
+
+  useEffect(() => {
+    const handleScroll = (event) => {
+      // Check if the scroll event is from the scroll wheel
+      if (event.deltaY !== 0) {
+        navigate('third');
+      }
+    };
+
+    // Attach scroll event listener
+    window.addEventListener('wheel', handleScroll);
+
+    // Clean up the event listener on component unmount
+    return () => {
+      window.removeEventListener('wheel', handleScroll);
+    };
+  }, [navigate]);
   return (
     <div style={lineargrad}>
             <div id="stars"/>
@@ -39,7 +58,7 @@ function Home() {
                   </ReactTyped>
                 </span>
             </div>      
-            <div className="btn" style={{cursor: "grabbing"}}onClick={()=>handleNav()}>Click</div>         
+            <div className="btn" style={{cursor: "grabbing"}}>Click</div>         
             </div>
   );
 }
